@@ -1,7 +1,6 @@
 import 'package:calculator/AppColors/colors.dart';
 import 'package:flutter/material.dart';
 
-// my name is khan,,,,,
 class MYButton extends StatelessWidget {
   final String title;
   final Color color;
