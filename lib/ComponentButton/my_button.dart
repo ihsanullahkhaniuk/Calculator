@@ -16,21 +16,29 @@ class MYButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 4),
-        child: InkWell(
-          onTap: onPress,
-          child: Container(
-            height: 80,
-            width: 80,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: color,
+        padding: EdgeInsets.symmetric(vertical: 4),
+        child: Theme(
+          data: ThemeData(
+            splashColor: Colors.transparent,
+          ),
+          child: InkWell(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: onPress,
+            child: Container(
+              margin: EdgeInsets.only(bottom: 10),
+              height: 70,
+              width: 70,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: color,
+              ),
+              child: Center(
+                  child: Text(
+                title,
+                style: headdingText,
+              )),
             ),
-            child: Center(
-                child: Text(
-              title,
-              style: headdingText,
-            )),
           ),
         ),
       ),
