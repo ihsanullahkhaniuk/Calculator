@@ -69,180 +69,181 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   ],
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        MYButton(
-                          title: 'AC',
-                          onPress: () {
-                            userInput = '';
-                            answer = '';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '+/-',
-                          onPress: () {
-                            userInput += '+/-';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '%',
-                          onPress: () {
-                            userInput += '%';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '/',
-                          color: kOrangeffa00a,
-                          onPress: () {
-                            userInput += '/';
-                            setState(() {});
-                          },
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        MYButton(
-                          title: '7',
-                          onPress: () {
-                            userInput += '7';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '8',
-                          onPress: () {
-                            userInput += '8';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '9',
-                          onPress: () {
-                            userInput += '9';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: 'x',
-                          color: kOrangeffa00a,
-                          onPress: () {
-                            userInput += '*';
-                            setState(() {});
-                          },
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        MYButton(
-                          title: '4',
-                          onPress: () {
-                            userInput += '4';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '5',
-                          onPress: () {
-                            userInput += '5';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '6',
-                          onPress: () {
-                            userInput += '6';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '-',
-                          color: kOrangeffa00a,
-                          onPress: () {
-                            userInput += '-';
-                            setState(() {});
-                          },
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        MYButton(
-                          title: '1',
-                          onPress: () {
-                            userInput += '1';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '2',
-                          onPress: () {
-                            userInput += '2';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '3',
-                          onPress: () {
-                            userInput += '3';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '+',
-                          color: kOrangeffa00a,
-                          onPress: () {
-                            userInput += '+';
-                            setState(() {});
-                          },
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        MYButton(
-                          title: '.',
-                          onPress: () {
-                            userInput += '.';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '0',
-                          onPress: () {
-                            userInput += '0';
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: 'Del',
-                          onPress: () {
-                            userInput =
-                                userInput.substring(0, userInput.length - 1);
-                            setState(() {});
-                          },
-                        ),
-                        MYButton(
-                          title: '=',
-                          color: kOrangeffa00a,
-                          onPress: () {
-                            equal();
-                            setState(() {});
-                          },
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              )
+              Spacer(),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      MYButton(
+                        title: 'AC',
+                        onPress: () {
+                          userInput = '';
+                          answer = '';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '+/-',
+                        onPress: () {
+                          userInput += '+/-';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '%',
+                        onPress: () {
+                          userInput += '%';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '/',
+                        color: kOrangeffa00a,
+                        onPress: () {
+                          userInput += '/';
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MYButton(
+                        title: '7',
+                        onPress: () {
+                          userInput += '7';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '8',
+                        onPress: () {
+                          userInput += '8';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '9',
+                        onPress: () {
+                          userInput += '9';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: 'x',
+                        color: kOrangeffa00a,
+                        onPress: () {
+                          userInput += '*';
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MYButton(
+                        title: '4',
+                        onPress: () {
+                          userInput += '4';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '5',
+                        onPress: () {
+                          userInput += '5';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '6',
+                        onPress: () {
+                          userInput += '6';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '-',
+                        color: kOrangeffa00a,
+                        onPress: () {
+                          userInput += '-';
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MYButton(
+                        title: '1',
+                        onPress: () {
+                          userInput += '1';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '2',
+                        onPress: () {
+                          userInput += '2';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '3',
+                        onPress: () {
+                          userInput += '3';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '+',
+                        color: kOrangeffa00a,
+                        onPress: () {
+                          userInput += '+';
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MYButton(
+                        title: '.',
+                        onPress: () {
+                          userInput += '.';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '0',
+                        onPress: () {
+                          userInput += '0';
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: 'Del',
+                        onPress: () {
+                          userInput =
+                              userInput.substring(0, userInput.length - 1);
+                          setState(() {});
+                        },
+                      ),
+                      MYButton(
+                        title: '=',
+                        color: kOrangeffa00a,
+                        onPress: () {
+                          equal();
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
             ],
           ),
         ),
